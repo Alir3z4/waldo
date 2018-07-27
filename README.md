@@ -16,9 +16,9 @@ Clone the repo and install.
 * `$ python setup.py install`
 
 
-### Usage
+### Usage via CLI
 
-The usage is pretty simple:
+The usage via CLI is pretty simple:
 
 ```
 Usage: subimage image1.jpeg image2.jpeg --display[Optional]
@@ -40,7 +40,23 @@ You can also pass `--display` arg to enable graphical interface to show the resu
 $ subimage images\landing.JPG images\landing-face.JPG
 ```
 
-### Dev
+
+## Using as Library
+
+You can use functionality as an standalone library as well in other programs.
+
+```
+>>> from subimage import SubImage
+>>> sub_image = SubImage(first_image_path='images/puzzle.png', second_image_path='images/waldo.png')
+>>> sub_image.find_match()
+>>> sub_image.tell_top_left()
+Top Left: (1300, 852)
+>>> sub_image.display() # It will open up a graphical window and shows the result
+Exit with pressing 0 (zero).
+```
+ 
+
+### Development
 
 In case you don't want to install the library would like to try it:
 

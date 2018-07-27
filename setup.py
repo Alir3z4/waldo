@@ -38,7 +38,7 @@ class RunCoverage(CommandBase):
 
 
 setup(
-    name="waldo",
+    name="subimage",
     version="2018.7.27",
     description="Find the cropped image in the original one.",
     author="Alireza Savand",
