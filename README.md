@@ -54,7 +54,9 @@ Top Left: (1300, 852)
 >>> sub_image.display() # It will open up a graphical window and shows the result
 Exit with pressing 0 (zero).
 ```
- 
+
+To find more detailed examples of how to use the library you may have a look at `tests/test_sub_images.py` test case 
+file.
 
 ### Development
 
