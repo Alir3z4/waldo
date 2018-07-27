@@ -61,6 +61,7 @@ setup(
         'opencv-python==3.4.2.17',
     ),
     packages=find_packages(exclude=['tests']),
+    py_modules=['subimage'],
     include_package_data=True,
     zip_safe=False,
 )

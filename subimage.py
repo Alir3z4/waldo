@@ -78,7 +78,7 @@ class SubImage:
 # Coverage is possible, but it's out of the scope of this task.
 def main() -> None:  # pragma: no cover
     if len(sys.argv) < 3 or len(sys.argv) > 4:
-        print('Usage: python subimage.py image1.jpeg image2.jpeg --display[Optional]')
+        print('Usage: {0} image1.jpeg image2.jpeg --display[Optional]'.format(sys.argv[0]))
         exit()
 
     can_display: bool = sys.argv[3] == '--display' if len(sys.argv) >= 4 else False

@@ -101,12 +101,3 @@ class TestSubImage(TestCase):
             expected_exc = exc
 
         self.assertEqual(expected_exc.args, ('Image file yellow cannot be found.', ))
-
-    def test_cli(self):
-        result = subprocess.check_output('python subimage.py')
-
-        self.assertEqual(result, b'Usage: python subimage.py image1.jpeg image2.jpeg --display[Optional]\r\n')
-
-        result = subprocess.check_output('python subimage.py wrongimage.png someother.image')
-
-        self.assertEqual(result, b'Image file wrongimage.png cannot be found.\r\n')
