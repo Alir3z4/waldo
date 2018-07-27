@@ -1,7 +1,5 @@
 [run]
 cover_pylib=False
-branch=True
-parallel=True
 omit=
     *site-packages*
     *distutils*
