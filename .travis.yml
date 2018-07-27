@@ -7,5 +7,5 @@ install:
 script:
   - "python setup.py test"
 after_success:
-  - "coverage report --skip-covered'"
+  - "coverage report --skip-covered"
   - codecov
