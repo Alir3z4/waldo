@@ -64,8 +64,8 @@ class SubImage:
         original: np.ndarray = cv2.addWeighted(self.original_image, 0.25, mask, 0.75, 0)
         original[top_left[1]:bottom_right[1], top_left[0]:bottom_right[0]] = region_of_interest
 
-        # display the images
-        cv2.imshow("Original", cv2.resize(original, (800, 600)))
+        # Display the images
+        cv2.imshow("Original", cv2.resize(original, (800, 600)))  # Could use a better resizing.
         cv2.imshow("Cropped", self.cropped_image)
 
         print('Exit with pressing 0 (zero).')
@@ -74,7 +74,7 @@ class SubImage:
 
 
 # Excluded from the code coverage report because the tests for this part
-# are run in different process using subsprocess.check_output.
+# are run in different process using :method:``subprocess.check_output``.
 # Coverage is possible, but it's out of the scope of this task.
 def main() -> None:  # pragma: no cover
     if len(sys.argv) < 3 or len(sys.argv) > 4:

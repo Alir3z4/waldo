@@ -86,7 +86,7 @@ $ python setup.py test
 To review the code coverage report run:
 
 ```
-python setup.py coverage
+$ python setup.py coverage
 ```
 
 It will generate the code coverage, printed on screen and saved in HTML format under `htmlcov/` dir. 
